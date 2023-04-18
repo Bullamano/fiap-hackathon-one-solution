@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from '@mui/material';
 
-import SimpleHeader from '../../Components/Header/Header';
+import { SimpleHeader } from '../../Components/Header/Header';
 
 import './ProfileChooserPage.css'
 import '../../App.css'
