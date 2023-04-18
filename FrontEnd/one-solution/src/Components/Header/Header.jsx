@@ -6,8 +6,8 @@ import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
+import Tooltip from '@mui/material/Tooltip';
 
-import DeleteIcon from '@mui/icons-material/Delete';
 import HomeIcon from '@mui/icons-material/Home';
 import AnnouncementIcon from '@mui/icons-material/Announcement';
 import SendIcon from '@mui/icons-material/Send';
@@ -79,27 +79,48 @@ export const InsiderHeader = () => {
                     <img src={logoImage} alt='Icone do One Solution. Link para a página inicial.' className='logo-image' />
                 </div>
             </Link>
-            <Stack direction="row" spacing={1}>
-                <IconButton color="black" aria-label="Home" className='icon-box'>
-                    <HomeIcon sx={{ fontSize: 40 }}/>
-                    <div className='icon-text'>Home</div>
-                </IconButton>
-                <IconButton color="black" aria-label="Reclamações" className='icon-box'>
-                    <AnnouncementIcon sx={{ fontSize: 40 }}/>
-                    <div className='icon-text'>Reclamações</div>
-                </IconButton>
-                <IconButton color="black" aria-label="Envios" className='icon-box'>
-                    <SendIcon sx={{ fontSize: 40 }}/>
-                    <div className='icon-text'>Envios</div>
-                </IconButton>
-                <IconButton color="black" aria-label="Compras" className='icon-box'>
-                    <InventoryIcon sx={{ fontSize: 40 }}/>
-                    <div className='icon-text'>Compras</div>
-                </IconButton>
-                <IconButton color="black" aria-label="Pagamentos" className='icon-box'>
-                    <AttachMoneyIcon sx={{ fontSize: 40 }}/>
-                    <div className='icon-text'>Pagamentos</div>
-                </IconButton>
+            <Stack direction="row" spacing={1} className='button-stacks'>
+                <Link to='/'>
+                    <Tooltip title='Home'>
+                        <IconButton aria-label="Home" className='icon-box'>
+                            <HomeIcon sx={{ fontSize: 40, color: '#000000' }} />
+                            <div className='icon-text'>Home</div>
+                        </IconButton>
+                    </Tooltip>
+                </Link>
+                <Link to='/ticketList'>
+                    <Tooltip title='Lista de tickets abertos'>
+                        <IconButton aria-label="Reclamações" className='icon-box'>
+                            <AnnouncementIcon sx={{ fontSize: 40, color: '#000000' }} />
+                            <div className='icon-text'>Reclamações</div>
+                        </IconButton>
+                    </Tooltip>
+                </Link>
+                {/* Obs.: as divs abaixo envelopando os botões só serve para enganar o MUI e permitir tooltip em um botões disabled */}
+                <Tooltip title='Lista de envios. Esta ferramenta não está habilitada na versão de protótipo'>
+                    <div>
+                        <IconButton disabled aria-label="Envios" className='icon-box'>
+                            <SendIcon sx={{ fontSize: 40 }} />
+                            <div className='icon-text'>Envios</div>
+                        </IconButton>
+                    </div>
+                </Tooltip>
+                <Tooltip title='Lista de compras realizadas. Esta ferramenta não está habilitada na versão de protótipo'>
+                    <div>
+                        <IconButton disabled aria-label="Compras" className='icon-box'>
+                            <InventoryIcon sx={{ fontSize: 40 }} />
+                            <div className='icon-text'>Compras</div>
+                        </IconButton>
+                    </div>
+                </Tooltip>
+                <Tooltip title='Lista de pagamentos recebidos. Esta ferramenta não está habilitada na versão de protótipo'>
+                    <div>
+                        <IconButton disabled aria-label="Pagamentos" className='icon-box'>
+                            <AttachMoneyIcon sx={{ fontSize: 40 }} />
+                            <div className='icon-text'>Pagamentos</div>
+                        </IconButton>
+                    </div>
+                </Tooltip>
             </Stack>
             <Box
                 component="form"

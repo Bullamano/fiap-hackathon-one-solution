@@ -54,3 +54,10 @@
     color: white;
     font-size: 12px;
 }
+
+.button-stacks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
