@@ -37,6 +37,10 @@ export const SimpleHeader = () => {
     );
 };
 
+/**
+ * Header para as áreas do site na qual usuários finais entram.
+ * @returns JSX do Header.
+ */
 export const UserHeader = () => {
     return (
         <div className='App-header' id='pageTop'>
@@ -71,6 +75,10 @@ export const UserHeader = () => {
     );
 };
 
+/**
+ * Header completo para áreas que apenas usuários internos da organização acessam.
+ * @returns JSX do Header.
+ */
 export const InsiderHeader = () => {
     return (
         <div className='App-header' id='pageTop'>

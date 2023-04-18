@@ -1,0 +1,17 @@
+.ticket-cells {
+    margin: 10px 0 10px 0;
+}
+
+.custom-item {
+    width: 95%;
+}
+
+.inside-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-between;
+    margin: 0 24px 0 24px;
+    height: 100%;
+}

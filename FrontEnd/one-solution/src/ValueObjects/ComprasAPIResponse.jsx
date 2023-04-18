@@ -5,7 +5,7 @@
  * (0 = compra não realizada; 1 = compra realizada;
  * 2 = mercadoria enviada; 3 = mercadoria recebida)
  */
-export const ComprasAPIResponse = [
+const ComprasAPIResponse = [
     {
         id: 1358,
         codigo: "4TR3U510K1",

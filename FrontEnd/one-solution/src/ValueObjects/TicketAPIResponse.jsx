@@ -5,7 +5,7 @@
  * campo de impacto (0 = baixo; 1 = médio; 2 = alto;
  * 3 = urgente)
  */
-export const TicketAPIResponse = [
+const TicketAPIResponse = [
     {
         id: 1374,
         codigo: "Rec-516",
@@ -14,7 +14,25 @@ export const TicketAPIResponse = [
         responsavel: "Gragas",
         dataCriacao: "2023-04-12T18:25:43.000",
         anexosId: 2684
-    }
+    },
+    {
+        id: 1375,
+        codigo: "Rec-123",
+        impacto: 0,
+        descricao: "Oi? Tem alguém aí?",
+        responsavel: "Gragas",
+        dataCriacao: "2042-02-24T00:24:42.000",
+        anexosId: 2688
+    },
+    {
+        id: 42042,
+        codigo: "Rec-042",
+        impacto: 1,
+        descricao: "Qual a resposta?",
+        responsavel: "Zaphod Beeblebrox",
+        dataCriacao: "3068-02-24T00:24:42.000",
+        anexosId: 5486
+    },
 ]
 
 export default TicketAPIResponse;
