@@ -1,8 +1,5 @@
 import React from 'react';
 
-import { Link } from "react-router-dom";
-import { Button } from '@mui/material';
-
 import { UserHeader } from '../../Components/Header/Header';
 
 import './CreateTicketPage.css'
@@ -12,7 +9,9 @@ const CreateTicketPage = () => {
   return (
     <div className='createTicket-screen'>
       <UserHeader />
-      Página de criação de ticket
+      <div className='Contents'>
+        Página de criação de ticket
+      </div>
     </div>
   );
 };

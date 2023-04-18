@@ -42,3 +42,15 @@
 .Avatar-photo {
     margin-right: 15px;
 }
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-text {
+    color: white;
+    font-size: 12px;
+}

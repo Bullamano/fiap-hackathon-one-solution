@@ -1,10 +1,15 @@
+import React from 'react';
 
+import { InsiderHeader } from '../../Components/Header/Header';
 
-const TicketListPage = () =>
-{
+import './TicketListPage.css'
+import '../../App.css'
+
+const TicketListPage = () => {
   return (
     <div className='ticketList-screen'>
-        Página de listagem dos tickets
+      <InsiderHeader />
+      Página de listagem dos tickets
     </div>
   );
 };
