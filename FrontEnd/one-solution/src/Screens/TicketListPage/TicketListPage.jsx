@@ -35,17 +35,20 @@ const TicketListPage = () => {
             <div className='ticket-list-title'>
               Reclamações abertas
             </div>
-            {/* <div className='table-titles'>
-              <Tooltip title='Esta funcionalidade não está habilitada na versão de protótipo'>
-                <img src={checkbox} className='checkbox-image' />
-              </Tooltip>
-              <p>Código</p>
-              <p>Impacto</p>
-              <p>Descrição</p>
-              <p>Responsável</p>
-              <p>Data de criação</p>
-            </div>
-            <Divider sx={{margin: '0 10px 0 10px'}}/> */}
+            {
+              //TODO Retirar linha superior? Ou alinhá-la às informações das células?            
+              /* <div className='table-titles'>
+                <Tooltip title='Esta funcionalidade não está habilitada na versão de protótipo'>
+                  <img src={checkbox} className='checkbox-image' />
+                </Tooltip>
+                <p>Código</p>
+                <p>Impacto</p>
+                <p>Descrição</p>
+                <p>Responsável</p>
+                <p>Data de criação</p>
+              </div>
+              <Divider sx={{margin: '0 10px 0 10px'}}/> */
+            }
             <TicketCells tickets={TicketAPIResponse} />
           </Box>
         </div>

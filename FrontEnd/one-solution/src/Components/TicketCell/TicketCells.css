@@ -6,7 +6,7 @@
     width: 95%;
 }
 
-.inside-box {
+.inside-box-light {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,4 +14,15 @@
     justify-content: space-between;
     margin: 0 24px 0 24px;
     height: 100%;
+}
+
+.inside-box-dark {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-between;
+    margin: 0 24px 0 24px;
+    height: 100%;
+    color: white;
 }
