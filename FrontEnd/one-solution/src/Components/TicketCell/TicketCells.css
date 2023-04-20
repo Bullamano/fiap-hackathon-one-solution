@@ -1,12 +1,14 @@
 .ticket-cells {
     margin: 10px 0 10px 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .custom-item {
     width: 95%;
 }
 
-.inside-box-light {
+.inside-box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,13 +18,29 @@
     height: 100%;
 }
 
-.inside-box-dark {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    vertical-align: middle;
-    justify-content: space-between;
-    margin: 0 24px 0 24px;
-    height: 100%;
-    color: white;
+.inside-text,
+.inside-text-non-essential {
+    width: calc(100vw / 6);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .inside-text-non-essential {
+        visibility: collapse;
+    }
+}
+
+.checkbox-image {
+    height: 30px;
+    width: 30px;
+}
+
+.prioridade-arrow {
+    height: 30px;
+    width: 15px;
+}
+
+.prioridade-lines {
+    height: 15px;
+    width: 15px;
 }

@@ -56,6 +56,7 @@ export const UserHeader = () => {
                 }}
                 noValidate
                 autoComplete="off"
+                className='non-essential-element'
             >
                 <TextField
                     id="outlined-basic"
@@ -68,7 +69,9 @@ export const UserHeader = () => {
                     }} />
             </Box>
             <div className='User-profile'>
-                <img src={notificationIcon} alt='Icone de notificações (não habilitado na versão de protótipo)' className='icon-image' />
+                <Tooltip title='Notificações não estão habilitadas na versão de protótipo'>
+                    <img src={notificationIcon} alt='Icone de notificações (não habilitado na versão de protótipo)' className='icon-image' />
+                </Tooltip>
                 <Avatar className='Avatar-photo' alt="Remy Sharp" src={profilePicRaze} />
             </div>
         </div>
@@ -105,7 +108,7 @@ export const InsiderHeader = () => {
                     </Tooltip>
                 </Link>
                 {/* Obs.: as divs abaixo envelopando os botões só serve para enganar o MUI e permitir tooltip em um botões disabled */}
-                <Tooltip title='Lista de envios. Esta ferramenta não está habilitada na versão de protótipo'>
+                <Tooltip title='Lista de envios. Esta ferramenta não está habilitada na versão de protótipo' className='non-essential-element'>
                     <div>
                         <IconButton disabled aria-label="Envios" className='icon-box'>
                             <SendIcon sx={{ fontSize: 40 }} />
@@ -113,7 +116,7 @@ export const InsiderHeader = () => {
                         </IconButton>
                     </div>
                 </Tooltip>
-                <Tooltip title='Lista de compras realizadas. Esta ferramenta não está habilitada na versão de protótipo'>
+                <Tooltip title='Lista de compras realizadas. Esta ferramenta não está habilitada na versão de protótipo' className='non-essential-element'>
                     <div>
                         <IconButton disabled aria-label="Compras" className='icon-box'>
                             <InventoryIcon sx={{ fontSize: 40 }} />
@@ -121,7 +124,7 @@ export const InsiderHeader = () => {
                         </IconButton>
                     </div>
                 </Tooltip>
-                <Tooltip title='Lista de pagamentos recebidos. Esta ferramenta não está habilitada na versão de protótipo'>
+                <Tooltip title='Lista de pagamentos recebidos. Esta ferramenta não está habilitada na versão de protótipo' className='non-essential-element'>
                     <div>
                         <IconButton disabled aria-label="Pagamentos" className='icon-box'>
                             <AttachMoneyIcon sx={{ fontSize: 40 }} />
@@ -137,6 +140,7 @@ export const InsiderHeader = () => {
                 }}
                 noValidate
                 autoComplete="off"
+                className='non-essential-element'
             >
                 <TextField
                     id="outlined-basic"
@@ -149,7 +153,9 @@ export const InsiderHeader = () => {
                     }} />
             </Box>
             <div className='User-profile'>
-                <img src={notificationIcon} alt='Icone de notificações (não habilitado na versão de protótipo)' className='icon-image' />
+                <Tooltip title='Notificações não estão habilitadas na versão de protótipo'>
+                    <img src={notificationIcon} alt='Icone de notificações (não habilitado na versão de protótipo)' className='icon-image' />
+                </Tooltip>
                 <Avatar className='Avatar-photo' alt="Remy Sharp" src={profilePicGragas} />
             </div>
         </div>

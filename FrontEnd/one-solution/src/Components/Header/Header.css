@@ -61,3 +61,16 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 1200px) {
+    .non-essential-element {
+        visibility: collapse;
+    }
+
+    .User-profile {
+        position: fixed;
+        right: 2vw;
+        top: 3vh;
+    }
+}
