@@ -1,0 +1,78 @@
+.background-purchase-div {
+    background: linear-gradient(315deg, #DFD7E2, #EEEEEE);
+    /* A altura abaixo desconta a altura do header de 10vh */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchase-bkg-box {
+    overflow-y: auto;
+}
+
+.purchase-info-title {
+    margin: 24px 0 10px 24px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.purchase-subtitle {
+    margin: 24px 0 0 36px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+.purchase-info-subtitle {
+    margin: 24px 0 0 36px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+
+.infos-purchase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-pagto,
+.info-prod,
+.info-compra {
+    width: fit-content;
+    white-space: pre-line;
+}
+
+.info-pagto {
+    text-align: start;
+}
+
+.info-prod,
+.info-compra {
+    text-align: center;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 900px) {
+    .infos-purchase {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.product-image {
+    height: 60px;
+    width: 60px;
+}
+
+.checkmark-image {
+    height: 30px;
+    width: 30px;
+}
