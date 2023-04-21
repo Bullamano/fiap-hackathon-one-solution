@@ -81,7 +81,7 @@ const TicketInfoPage = () => {
                   height: '24px',
                   margin: '12px 0 0 24px',
                   padding: '2px',
-                  width: '150px',
+                  width: '180px',
                 }}>
                 {SingleTicketAPIResponse.responsavel} (responsavel)
               </Box>
@@ -93,7 +93,7 @@ const TicketInfoPage = () => {
                   height: '24px',
                   margin: '12px 0 0 24px',
                   padding: '2px',
-                  width: '260px',
+                  width: '280px',
                 }}>
                 Tags: #Insatisfeito #Fogo #Critico ...
               </Box>
