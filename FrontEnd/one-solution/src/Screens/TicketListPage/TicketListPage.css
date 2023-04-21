@@ -26,4 +26,17 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 24px 0 24px;
+    width: 94%;
+}
+
+.inside-text,
+.inside-text-non-essential {
+    width: calc(100vw / 6);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .inside-text-non-essential {
+        visibility: collapse;
+    }
 }
