@@ -1,0 +1,76 @@
+/* Header da aplicação preso na parte superior da tela */
+.App-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #345096;
+    min-height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    z-index: 100;
+}
+
+/* Container para conteúdos do header */
+.Header-content {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.logo-image {
+    height: 60px;
+}
+
+.User-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-image {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.Avatar-photo {
+    margin-right: 15px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-text {
+    color: white;
+    font-size: 12px;
+}
+
+.button-stacks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 1200px) {
+    .non-essential-element {
+        visibility: collapse;
+    }
+
+    .User-profile {
+        position: fixed;
+        right: 2vw;
+        top: 3vh;
+    }
+}
