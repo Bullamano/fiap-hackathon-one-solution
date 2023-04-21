@@ -9,12 +9,12 @@ import Tooltip from '@mui/material/Tooltip';
 
 import { InsiderHeader } from '../../Components/Header/Header';
 
-import TicketAPIResponse from '../../ValueObjects/TicketAPIResponse';
+import { TicketAPIResponse } from '../../ValueObjects/TicketAPIResponse';
 
 import checkbox from '../../Assets/Checkbox.png';
 
-import './TicketListPage.css'
-import '../../App.css'
+import './TicketListPage.css';
+import '../../App.css';
 import TicketCells from '../../Components/TicketCell/TicketCells';
 
 /**

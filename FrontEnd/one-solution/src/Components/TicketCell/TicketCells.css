@@ -1,6 +1,6 @@
 .ticket-cells {
     margin: 10px 0 10px 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     scroll-behavior: smooth;
 }
 
