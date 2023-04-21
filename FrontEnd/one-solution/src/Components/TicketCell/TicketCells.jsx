@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -17,7 +18,6 @@ import './TicketCells.css';
  * @returns Uma lista das células com base nos tickets fornecidos.
  */
 const TicketCells = ({ tickets }) => {
-
   return (
     <div className='ticket-cells'>
       <Grid className='custom-grid' container>
@@ -36,20 +36,50 @@ const TicketCells = ({ tickets }) => {
  * @returns Ticket para a lista com cor baseada no index.
  */
 const UniqueCell = ({ cell, index }) => {
-  if (index % 2 == 0) {
+
+  /**
+   * Em comunicação com a API, todas as células teriam um wrapper Link,
+   * direcionando o usuário para uma página com o ID da requisição. Para
+   * o protótipo, apenas o primeiro link direcionará para uma página
+   * predeterminada.
+   */
+  if (index == 0) {
+    return (
+      <Link to='/ticketInfo' className='cell-render-wrapper'>
+        <CellRender cell={cell} bkgColor={'#BDBDBD'} fntColor={'black'} />
+      </Link>
+    );
+  }
+  else if (index % 2 == 0) {
     // Light color cell
     return (
-      <CellRender cell={cell} bkgColor={'#BDBDBD'} fntColor={'black'} />
+      <Tooltip title='Para a versão de protótipo, apenas a primeira célula é clicável.'>
+        <div className='cell-render-wrapper'>
+          <CellRender cell={cell} bkgColor={'#BDBDBD'} fntColor={'black'} />
+        </div>
+      </Tooltip>
     );
   }
   else {
     // Dark color cell
     return (
-      <CellRender cell={cell} bkgColor={'#343434'} fntColor={'white'} />
+      <Tooltip title='Para a versão de protótipo, apenas a primeira célula é clicável.'>
+        <div className='cell-render-wrapper'>
+          <CellRender cell={cell} bkgColor={'#343434'} fntColor={'white'} />
+        </div>
+      </Tooltip>
     );
   }
 };
 
+/**
+ * Renderização condicional das células com base nas cores
+ * selecionadas pelo index do map.
+ * @param {*} cell JSON com informações da célula. 
+ * @param {*} bkgColor Cor a ser usada no fundo da célula.
+ * @param {*} fntColor Cor da fonte a ser usada na célula.
+ * @returns 
+ */
 const CellRender = ({ cell, bkgColor, fntColor }) => {
 
   if (cell.descricao.length > 50) {

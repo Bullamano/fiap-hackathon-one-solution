@@ -8,6 +8,11 @@
     width: 95%;
 }
 
+.cell-render-wrapper {
+    width: 100%;
+    text-decoration: none;
+}
+
 .inside-box {
     display: flex;
     flex-direction: row;
