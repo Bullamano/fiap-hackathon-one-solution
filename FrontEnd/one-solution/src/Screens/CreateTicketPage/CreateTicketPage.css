@@ -1,0 +1,66 @@
+.createTicket-screen {
+    background: linear-gradient(315deg,#DFD7E2, #EEEEEE);
+}
+
+.workarea-box {
+    overflow-y: auto;
+}
+
+.Contents h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 35px;
+    border-top: 2px solid #8d8e8f;
+    padding-top: 35px;
+  }
+
+.form-box {
+    justify-content: center;
+    background-color: white;
+    width: 40vw;
+    height: auto;
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    border-radius: 50px;
+  }
+
+.decription-box {
+    justify-content: center;
+    background-color: white;
+    width: 40vw;
+    height: 300px;
+    margin-Left: 65px;
+    margin-Right: 65px;
+    margin-Bottom: 12px;
+    margin-Top: 30px;
+    border-Radius: 25px;
+}
+
+.file-upload-box {
+    background-color: #fcedac;
+    height: auto;
+    width: 13vw;
+    border-Radius: 50px;
+    margin: auto;
+    margin-Bottom: 12px;
+    margin-Top: 12px;
+}
+
+.send-box {
+    background-color: #ccfcac;
+    height: auto;
+    width: 13vw;
+    border-Radius: 50px;
+    margin: auto;
+    margin-Bottom: 20px;
+    margin-Top: 12px;
+}
+  
+  
+  
+  
+  
+  
+  
