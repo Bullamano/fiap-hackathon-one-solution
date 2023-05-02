@@ -19,6 +19,6 @@ Nesta pasta, se encontram todos os fontes pertencentes ao back end e lógica de 
 
 ## Pasta "FrontEnd"
 
-Nesta pasta, se encontram todos os fontes referentes a UI e UX da aplicação.
+Nesta pasta, se encontram todos os fontes referentes a UI e UX da aplicação. Certifique-se de ler o README nesta pasta, pois ele indica como funciona a aplicação e suas telas.
 
 ##

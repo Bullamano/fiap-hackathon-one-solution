@@ -1,0 +1,58 @@
+// *tickets*
+
+// GET - Todos os tickets
+// /api/v1/tickets
+
+// response
+[
+    {
+        "codigo": 3,
+        "impacto": 1,
+        "descricao": "Problema na confirmação do pagamento.",
+        "responsavel": "Alfredo",
+        "dataCriacao": "2023-04-20T12:49:47"
+    },
+    {
+        "codigo": 4,
+        "impacto": 2,
+        "descricao": "Minha mercadoria não chegou!! Está atrasada!!",
+        "responsavel": "Amanda",
+        "dataCriacao": "2023-04-20T12:50:37"
+    }
+]
+
+// POST - Criar um ticket
+// /api/v1/tickets
+
+// request
+{
+	"impacto": 2,
+	"descricao": "Minha mercadoria não chegou!! Está atrasada!!",
+	"responsavel": "Amanda"
+}
+
+// response = status 201 created
+
+// PUT - Alterar um ticket
+// /api/v1/tickets/{id}
+
+// request
+{
+	"impacto": 1,
+	"descricao": "Resolvido",
+	"responsavel": "Amanda"
+}
+
+// response
+{
+    "codigo": 4,
+    "impacto": 1,
+    "descricao": "Resolvido",
+    "responsavel": "Amanda",
+    "dataCriacao": "2023-04-20T12:55:01.8096774"
+}
+
+// DELETE - Deletar um ticket
+// /api/v1/tickets/{id}
+
+// response = status 204 no content

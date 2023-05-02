@@ -1,0 +1,46 @@
+.background-info-div {
+    background: linear-gradient(315deg,#DFD7E2, #EEEEEE);
+    /* A altura abaixo desconta a altura do header de 10vh */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workarea-box {
+    overflow-y: auto;
+}
+
+.ticket-info-title {
+    margin: 24px 0 10px 24px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.info-button-wrapper {
+    color: black;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    width: 100%;
+}
+
+.names-and-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+}
+
+.tag-box {
+    overflow: hidden;
+}
+
+.anexo-imagem {
+    height: 100px;
+    margin: 10px 15px 0 15px;
+    width: 100px;
+}

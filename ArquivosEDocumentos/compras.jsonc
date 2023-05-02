@@ -1,0 +1,60 @@
+// *compras*
+
+// GET - Todos os compras
+// /api/v1/compras
+
+// response
+[
+    {
+        "codigo": 1,
+        "infoPagamento": "Cartão de crédito",
+        "infoProduto": "Iphone 30",
+        "infoCompra": "Em análise",
+        "status": 3
+    },
+    {
+        "codigo": 2,
+        "infoPagamento": "PIX",
+        "infoProduto": "Bicicleta",
+        "infoCompra": "Compra aprovada",
+        "status": 1
+    }
+]
+
+// POST - Criar uma compra
+// /api/v1/compras
+
+// request
+{
+    "infoPagamento": "PIX",
+    "infoProduto": "Bicicleta",
+    "infoCompra": "Compra aprovada",
+    "status": 1
+}
+
+// response = status 201 created
+
+// PUT - Alterar uma compra
+// /api/v1/compras/{id}
+
+// request
+{
+    "infoPagamento": "Cartão de crédito",
+    "infoProduto": "Iphone 30",
+    "infoCompra": "Em análise",
+    "status": 3
+}
+
+// response
+{
+    "codigo": 1,
+    "infoPagamento": "Cartão de crédito",
+    "infoProduto": "Iphone 30",
+    "infoCompra": "Em análise",
+    "status": 3
+}
+
+// DELETE - Deletar uma compra
+// /api/v1/compras/{id}
+
+// response = status 204 no content

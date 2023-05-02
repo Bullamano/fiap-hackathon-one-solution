@@ -1,0 +1,49 @@
+.profile-page {
+    height: 100%;
+}
+
+.initial-screen-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.initial-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.initial-button {
+    margin: 0 10px;
+    min-width: 120px;
+    text-decoration: none;
+}
+
+.initial-info-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 15vh 20vh 5vh 20vh;
+
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .initial-screen {
+        flex-direction: column;
+    }
+
+    .initial-button-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .initial-button {
+        margin: 10px 0;
+    }
+}
